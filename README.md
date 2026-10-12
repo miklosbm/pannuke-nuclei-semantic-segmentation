@@ -37,9 +37,9 @@ Augmentation: flips, 90°/180°/270° rotation, brightness / contrast / saturati
 *Per batch:* the value printed at the end of notebooks 01–04, averaged over batches (batch size 64 for models 1–2, 16 for models 3–4), which is more forgiving.
 Both give the same ranking.
 
-Predictions of the four models on the same test images (from `05_DataEvaluation_summary.ipynb`):
+The result images (training curves and visual predictions) can be found in the `images` folder. A small model comparison on the same test images can be seen here:
 
-![Ground truth and the predictions of the four models on test images](images/model_comparison.png)
+<img width="1773" height="1872" alt="comparison" src="https://github.com/user-attachments/assets/2bffe1d2-4673-4a06-ada6-2efddcf6a1be" />
 
 ## Project structure
 
