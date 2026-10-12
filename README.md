@@ -1,7 +1,7 @@
 # Multi-class Semantic Segmentation on the PanNuke Histological Dataset
 
 Four U-Net-family models in PyTorch, compared on six-class nuclei segmentation of histology images.
-Average Dice improves from **0.49** (baseline U-Net) to **0.65** (pretrained ResNet34 UNet++) through regularisation, augmentation and transfer learning.
+Test Dice improves from **0.49** (baseline U-Net) to **0.65** (pretrained ResNet34 UNet++) through regularisation, augmentation and transfer learning (**0.42 → 0.63** when Dice is averaged per image, see [Results](#results)).
 
 ## Task
 
@@ -36,6 +36,10 @@ Augmentation: flips, 90°/180°/270° rotation, brightness / contrast / saturati
 *Per image:* Dice computed for every test image and averaged over the 398 test images (`05_DataEvaluation_summary.ipynb`).
 *Per batch:* the value printed at the end of notebooks 01–04, averaged over batches (batch size 64 for models 1–2, 16 for models 3–4), which is more forgiving.
 Both give the same ranking.
+
+Predictions of the four models on the same test images (from `05_DataEvaluation_summary.ipynb`):
+
+![Ground truth and the predictions of the four models on test images](images/model_comparison.png)
 
 ## Project structure
 
