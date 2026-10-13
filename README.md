@@ -1,4 +1,4 @@
-# Multi-class Semantic Segmentation on the PanNuke Histological Dataset
+# Multi-class Nuclei Semantic Segmentation on the PanNuke Histopathology Dataset
 
 Four U-Net-family models in PyTorch, compared on six-class nuclei segmentation of histology images.
 Test Dice improves from **0.49** (baseline U-Net) to **0.65** (pretrained ResNet34 UNet++) through regularisation, augmentation and transfer learning (**0.42 → 0.63** when Dice is averaged per image, see [Results](#results)).
